@@ -19,7 +19,7 @@ def main():
     init_session_state()
     
     # Configure Generative AI
-    api_key = "AIzaSyDsYO0XnCMxIDON8f0WT7-nllReGeBcVUo"
+    api_key = "YOUR_GEMINI_API_KEY"
     if not api_key:
         st.error("Please set the GOOGLE_API_KEY in your .env file")
         return
@@ -108,4 +108,5 @@ def main():
             st.session_state.processing = False
 
 if __name__ == "__main__":
+
     main()
